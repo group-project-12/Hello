@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/images/1.jfif" class="d-block w-100" height = "500" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/2.jfif" class="d-block w-100" height = "500" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/3.jfif" class="d-block w-100" height = "500" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="container">
+<h2 class="my-2 text-center">Select from our range of Products</h2>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Mobiles</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Android</li>
+              <li>IOS</li>
+              <li>Windows</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Go to Products</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Electronics</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>AC's</li>
+              <li>Smart TV</li>
+              <li>Washing Machines</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Go to Products</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Accessories</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Earphones</li>
+              <li>Headphones</li>
+              <li>Chargers</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Go to Products</button>
+          </div>
+        </div>
+      </div>
+      
+</div>
+{% endblock body %}
